@@ -1,5 +1,5 @@
 import Description from './components/Description';
-import Header from './components/Header';
+
 import Images from './components/Images';
 import Rating from './components/Rating';
 import ReservationCard from './components/ReservationCard';
@@ -10,34 +10,28 @@ import Title from './components/Title';
 export default function RestaurantDetails() {
   return (
     <>
-      {/* HEADER */}
-      <Header />
-      {/* HEADER */}
-      {/* DESCRIPTION PORTION */}
-      <div className="flex m-auto w-2/3 justify-between items-start 0 -mt-11">
-        <div className="bg-white w-[70%] rounded p-3 shadow">
-          {/* RESAURANT NAVBAR */}
-          <RestaurantNavBar />
-          {/* RESAURANT NAVBAR */}
-          {/* TITLE */}
-          <Title />
-          {/* TITLE */}
-          {/* RATING */}
-          <Rating />
-          {/* RATING */}
-          {/* DESCRIPTION */}
-          <Description />
-          {/* DESCRIPTION */}
-          {/* IMAGES */}
-          <Images />
-          {/* IMAGES */}
-          {/* REVIEWS */}
-          <Reviews />
-          {/* REVIEWS */}
-        </div>
-        <div className="w-[27%] relative text-reg">
-          <ReservationCard />
-        </div>
+      <div className="bg-white w-[70%] rounded p-3 shadow">
+        {/* RESAURANT NAVBAR */}
+        <RestaurantNavBar />
+        {/* RESAURANT NAVBAR */}
+        {/* TITLE */}
+        <Title />
+        {/* TITLE */}
+        {/* RATING */}
+        <Rating />
+        {/* RATING */}
+        {/* DESCRIPTION */}
+        <Description />
+        {/* DESCRIPTION */}
+        {/* IMAGES */}
+        <Images />
+        {/* IMAGES */}
+        {/* REVIEWS */}
+        <Reviews />
+        {/* REVIEWS */}
+      </div>
+      <div className="w-[27%] relative text-reg">
+        <ReservationCard />
       </div>
       {/* DESCRIPTION PORTION */} {/* RESERVATION CARD PORTION */}{' '}
       {/* RESERVATION
