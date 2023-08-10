@@ -49,19 +49,19 @@ export default async function RestaurantDetails({
     <>
       <div className="bg-white w-[70%] rounded p-3 shadow">
         {/* RESAURANT NAVBAR */}
-        <RestaurantNavBar />
+        <RestaurantNavBar slug={restaurant.slug} />
         {/* RESAURANT NAVBAR */}
         {/* TITLE */}
-        <Title />
+        <Title name={restaurant.name} />
         {/* TITLE */}
         {/* RATING */}
         <Rating />
         {/* RATING */}
         {/* DESCRIPTION */}
-        <Description />
+        <Description description={restaurant.description} />
         {/* DESCRIPTION */}
         {/* IMAGES */}
-        <Images />
+        <Images images={restaurant.images} />
         {/* IMAGES */}
         {/* REVIEWS */}
         <Reviews />
