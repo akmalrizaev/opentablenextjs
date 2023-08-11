@@ -11,11 +11,11 @@ import Title from './components/Title';
 const prisma = new PrismaClient();
 
 interface Restaurant {
-  id: true;
-  name: true;
-  images: true;
-  description: true;
-  slug: true;
+  id: number;
+  name: string;
+  images: string[];
+  description: string;
+  slug: string;
 }
 
 const fetchRestaurantBySlug = async (slug: string): Promise<Restaurant> => {
